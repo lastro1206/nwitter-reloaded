@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/_layout";
+import Layout from "./components/layout";
 import Home from "./routes/home";
 import Profile from "./routes/profile";
 import Login from "./routes/login";
@@ -51,9 +51,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
+    -ms-overflow-style: none;
     background-color: black;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  ::-webkit-scrollbar {
+  display: none;
   }
 `;
 
